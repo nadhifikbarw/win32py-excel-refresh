@@ -5,7 +5,7 @@ import win32com.client as win32
 
 def open_excel():
   excel = win32.gencache.EnsureDispatch('Excel.Application')
-  excel.Visible = True
+  excel.Visible = False
   return excel
 
 def open_workbook(excel, path):
